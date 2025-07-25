@@ -1,0 +1,21 @@
+
+
+{% extends 'base.html' %}
+
+{% block title %} {% endblock title %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">Add Book</h2>
+  
+  <form action="" method="POST">
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <button type=" submit" class="btn btn-success">Save Button</button>
+    <a href="{% url 'inventory_page' %}" class="btn btn-secondary">cancel</a>
+  </form>
+</div>
+{% endblock %}

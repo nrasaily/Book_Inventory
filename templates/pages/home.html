@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid vh 100 d-flex align-items-center">
+  <div class="row w-100">
+    <div class="col-md-6 p-0">
+      <img src="{% static 'img/nar.jpg' %}" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover;"
+        alt="my image">
+    </div>
+
+
+    <div class="col-md-6 d-flex justify-content-center align-items-center bg-light">
+      <div class="text-center px-4">
+        <h1 class="display-4 fw-bold">Inventory Management System</h1>
+        <p class="lead">Designed by: Nar Always with Django + Bootstrap</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
